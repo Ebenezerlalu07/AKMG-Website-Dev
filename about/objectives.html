@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/Assets/Logo Only.jpg" />
+    <title>AKMG Global</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/contact.css">
+    <!-- Loader -->
+
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loader">
+        <img src="/Assets/Logo Only.jpg" alt="Loading..." class="loader-logo" />
+    </div>
+
+    <!-- Your Website Content -->
+    <div id="content" style="display: none">
+        <!-- Your entire website HTML here -->
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white py-3 shadow-sm fixed-top">
+        <div class="custom-container d-flex align-items-center justify-content-between">
+            <a class="navbar-brand d-flex align-items-center m-0" href="/index.html">
+                <img src="/Assets/logo.png" height="45" />
+            </a>
+
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu">
+                <i class="bi bi-list" style="font-size: 32px"></i>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav nav-text align-items-center">
+                    <li><a class="nav-link " href="/index.html">Home</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="active nav-link desktop-dropdown pe-2" data-bs-toggle="dropdown">
+                            About us <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/about/objectives.html">Objectives</a></li>
+                            <li><a class="dropdown-item" href="/about/officebears.html">Office Bearers</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link desktop-dropdown pe-2" data-bs-toggle="dropdown">
+                            Network <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Join the Network</a></li>
+                            <li><a class="dropdown-item" href="#">Directory</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="nav-link" href="/Pages/events.html">Events</a></li>
+                    <li><a class="nav-link " href="/Pages/gallery.html">Gallery</a></li>
+                    <li><a class="nav-link" href="/Pages/media.html">Media</a></li>
+                    <li><a class="nav-link" href="/Pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <a class="login-btn d-none d-lg-flex align-items-center ms-3 btn btn-danger custom-btn" href="#">
+                Login
+                <div class="icon-round">
+                    <i data-lucide="arrow-up-right" class="lucide-icon"></i>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="offcanvas offcanvas-top h-100 mobile-offcanvas" id="mobileMenu" style="top: 70px">
+        <div class="offcanvas-body">
+            <a class="mobile-link" href="/index.html">Home <i class="bi bi-arrow-right"></i></a>
+
+            <!-- Dropdown 1 -->
+            <a class="mobile-link collapsed" data-bs-toggle="collapse" data-bs-target="#aboutDrop">
+                About <i class="bi bi-chevron-down"></i>
+            </a>
+            <div class="collapse ms-2" id="aboutDrop">
+                <a class="mobile-sublink" href="/about/objectives.html">Objectives</a>
+                <a class="mobile-sublink" href="/about/officebears.html">Office Bearers</a>
+            </div>
+
+            <!-- Dropdown 2 -->
+            <a class="mobile-link collapsed" data-bs-toggle="collapse" data-bs-target="#networkDrop">
+                Network <i class="bi bi-chevron-down"></i>
+            </a>
+            <div class="collapse ms-2" id="networkDrop">
+                <a class="mobile-sublink" href="#">Join the Network</a>
+                <a class="mobile-sublink" href="#">Directory</a>
+            </div>
+
+            <a class="mobile-link" href="/Pages/events.html">Events <i class="bi bi-arrow-right"></i></a>
+            <a class="mobile-link" href="/Pages/gallery.html">Gallery <i class="bi bi-arrow-right"></i></a>
+            <a class="mobile-link" href="/Pages/media.html">Media <i class="bi bi-arrow-right"></i></a>
+            <a class="mobile-link" href="/Pages/contact.html">Contact <i class="bi bi-arrow-right"></i></a>
+            <a class="mobile-link" href="#">Login <i class="bi bi-arrow-right"></i></a>
+        </div>
+    </div>
+
+
+
+
+
+
+    <section class="akmg-hero">
+        <img src="/Assets/abt objectives.jpg" class="hero-img" alt="AKMG Banner">
+        <div class="hero-text-center">
+            <h1>About AKMG Global</h1>
+        </div>
+    </section>
+
+
+    <!-- About -->
+    <section class="py-4 custom-container">
+        <h2 class="text-center about-title">
+            About <span class="fw-bold"> AKMG Global</span>
+        </h2>
+        <p class="">
+            The Association of Kerala Medical and Dental Graduates (AKMG) Global is a global networking platform that
+            unites medical and dental professionals with Keralan origin from all over the world.<br></br>
+
+            Medical or Dental Doctors from Kerala have established themselves in communities and countries across the
+            globe. They have risen to the highest echelons of the medical domain in their adopted countries, as
+            researchers, teachers, policy makers, entrepreneurs, and superb medical practitioners. Their innate
+            resourcefulness, diagnostic and problem-solving minds, and culture of service have enabled them to succeed
+            in the countries they have chosen to serve.<br><br>
+
+            The vast numbers of doctors practicing in countries such as the US, Canada, Australia, the Middle East,
+            Europe, Africa, and beyond present a unique opportunity to create a powerful networking community. This is a
+            collaborative effort of like-minded doctors with the goal of bringing together their brethren across the
+            world under a single umbrella.<br><br>
+
+            AKMG Global aims to strengthen these bonds and create a vibrant community of healthcare professionals who
+            can support each other in their personal and professional endeavours. Many of our colleagues have the
+            capability and resources to initiate professional and academic exchanges for the benefit of society, to
+            communities and locations where they are needed. Our shared language and culture, which resonates even with
+            our families and children, provide a strong foundation for this connection.<br><br>
+        </p>
+    </section>
+
+
+
+
+
+
+    <!-- TESTIMONIAL SECTION -->
+    <section class="testimonial-section" style="
+    position: relative;
+    background: url('/Assets/AKMG\ trusted.png') center / cover no-repeat;
+    padding: 130px 0;
+    min-height: 500px;
+">
+
+        <!-- OVERLAY -->
+
+        <div class="custom-container position-relative">
+            <div class="row align-items-center">
+
+                <!-- LEFT CONTENT -->
+                <div class="col-lg-5 text-white mb-5 mb-lg-0">
+                    <h2 class="about-title mb-4 fw-normal" style="
+                    font-size: clamp(26px, 6vw, 40px);
+                    line-height: 1.25;
+                ">
+                        AKMG <span class="fw-bold">Trusted</span> by
+                        <br class="d-none d-sm-block">
+                        Medical Professionals
+                    </h2>
+
+                    <!-- CONTROLS -->
+                    <div class="d-flex gap-3">
+                        <button class="btn rounded-circle p-2" style="background:#fff;" onclick="prevTestimonial()">
+                            <i data-lucide="arrow-left" style="color:#274193;"></i>
+                        </button>
+
+                        <button class="btn rounded-circle p-2" style="background:#fff;" onclick="nextTestimonial()">
+                            <i data-lucide="arrow-right" style="color:#274193;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- RIGHT CARD -->
+                <div class="col-lg-7">
+                    <div class="bg-white rounded-4 shadow p-4 p-md-5">
+
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <img id="avatar" style="width:60px;height:60px;border-radius:50%;object-fit:cover;">
+                            <div>
+                                <h5 class="fw-bold mb-0" id="name"></h5>
+                                <small class="text-muted" id="country"></small>
+                            </div>
+                        </div>
+
+                        <p class="text-muted mb-0" id="quote" style="font-size:16px; line-height:1.6;"></p>
+
+                        <!-- DOTS -->
+                        <div class="d-flex justify-content-center gap-2 mt-4" id="dots"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- STYLES -->
+    <style>
+        /* SECTION BASE */
+        .testimonial-section {
+            overflow: hidden;
+            /* CRITICAL: keeps overlay inside */
+        }
+
+
+        /* DOTS */
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #ccc;
+            cursor: pointer;
+        }
+
+        .dot.active {
+            background: #274193;
+        }
+
+        /* ✅ MOBILE FIX */
+        @media (max-width: 768px) {
+            .testimonial-section {
+                min-height: 100vh;
+                /* FULL SCREEN HEIGHT */
+                padding: 60px 0;
+                background-size: cover;
+                background-position: center center;
+                display: flex;
+                align-items: center;
+            }
+
+            .testimonial-overlay {
+                inset: 0;
+                /* MATCH SECTION EXACTLY */
+            }
+        }
+    </style>
+
+    <!-- LUCIDE ICONS -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- TESTIMONIAL SCRIPT -->
+    <script>
+        const testimonials = [
+            {
+                name: "Dr. Nigil Haroon",
+                country: "Co-Secretary General AKMG Global",
+                avatar: "/Assets/Dr. Nigil Haroon.jpg",
+                quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+            },
+            {
+                name: "Dr. SS Lal",
+                country: "United States of America",
+                avatar: "/Assets/Dr. Nigil Haroon.jpg",
+                quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+            },
+            {
+                name: "Dr. Sunny Kurian",
+                country: "Secretary General AKMG Global",
+                avatar: "/Assets/Dr. Nigil Haroon.jpg",
+                quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+            }
+        ];
+
+
+        let currentIndex = 0;
+
+        const avatar = document.getElementById("avatar");
+        const nameEl = document.getElementById("name");
+        const countryEl = document.getElementById("country");
+        const quoteEl = document.getElementById("quote");
+        const dotsContainer = document.getElementById("dots");
+
+        function renderDots() {
+            dotsContainer.innerHTML = "";
+            testimonials.forEach((_, i) => {
+                const dot = document.createElement("span");
+                dot.className = "dot" + (i === currentIndex ? " active" : "");
+                dot.onclick = () => {
+                    currentIndex = i;
+                    updateTestimonial();
+                };
+                dotsContainer.appendChild(dot);
+            });
+        }
+
+        function updateTestimonial() {
+            const t = testimonials[currentIndex];
+            avatar.src = t.avatar;
+            nameEl.textContent = t.name;
+            countryEl.textContent = t.country;
+            quoteEl.textContent = "“" + t.quote + "”";
+            renderDots();
+        }
+
+        function nextTestimonial() {
+            currentIndex = (currentIndex + 1) % testimonials.length;
+            updateTestimonial();
+        }
+
+        function prevTestimonial() {
+            currentIndex =
+                (currentIndex - 1 + testimonials.length) % testimonials.length;
+            updateTestimonial();
+        }
+
+        /* INIT */
+        updateTestimonial();
+        lucide.createIcons();
+    </script>
+
+
+
+
+    <section style="padding:40px 0;">
+        <div class="custom-container">
+            <!-- IMPORTANT: stretch -->
+            <div class="row gy-5 align-items-stretch">
+
+                <!-- LEFT CONTENT -->
+                <div class="col-lg-8">
+                    <h2 class="about-title">
+                        Objectives of <span class="fw-bold">AKMG Global</span>
+                    </h2><br>
+
+                    <p class="about-title">
+                        <strong>Networking :</strong>
+                        The organization facilitates the member associates to connect, work towards common goals, and
+                        exchange knowledge and expertise. This may require creating expert support online channels to
+                        for the benefit of the society for easily dissemination of accurate and credible information
+                        regarding issues pertaining to health and disease thereby propagating the practice of ethical
+                        and evidence-based scientific medicine among its members.
+                    </p>
+
+                    <p class="about-title">
+                        <strong>Professional Development :</strong>
+                        Encouraging research in medical and dental sciences with grants, out of the funds of the
+                        association through the establishment of scholarships, prizes, awards, and rewards. Organizing
+                        seminars, educational programs, and publish scientific journals to keep its members up-to-date
+                        with the latest developments in medicine and dentistry. Promoting the knowledge, study, and
+                        practice of medicine and dentistry in all aspects, as well as to advance educational and
+                        scientific development among its
+                    </p>
+
+                    <p class="about-title">
+                        <strong>Missions and Advocacy :</strong>
+                        AKMG Global stands for the interests of the healthcare sector as well as the rights and welfare
+                        of medical and dental professionals. Advocacy involves creating and sustaining a channel of
+                        communication and dialogue with official bodies in India and abroad for the betterment of the
+                        profession and to safeguard members' professional rights in the society. Also to coordinate with
+                        the Indian Medical Association (IMA), Kerala State and support IMA's activities whenever
+                        possible.
+                    </p>
+
+                    <p class="about-title">
+                        <strong>Philanthropy :</strong>
+                        Organize services of humanitarian and social service nature all over the world. Provide
+                        preventive healthcare and medical and dental assistance to communities worldwide, especially in
+                        Kerala and extend humanitarian services to people in need.
+                    </p>
+
+                    <p class="about-title mb-0">
+                        <strong>Social and Cultural :</strong>
+                         Promote cooperation and friendship among its members and their families, foster their cultural,
+                        social, and personal development, also intended to promote Kerala's rich heritage and
+                        traditions.
+                    </p>
+                </div>
+
+                <!-- RIGHT IMAGE -->
+                <div class="col-lg-4 d-flex">
+                    <div class="objective-img-box">
+                        <img src="/Assets/about objective side.jpg" alt="AKMG Objectives">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .objective-img-box {
+            width: 100%;
+            max-width: 480px;
+            border-radius: 12px;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .objective-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Mobile: allow natural flow */
+        @media (max-width: 992px) {
+            .objective-img-box {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .objective-img-box img {
+                height: auto;
+            }
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Global with img -->
+    <section class="global-video-section image-bg">
+        <div class="video-overlay"></div>
+
+        <div class="video-content text-center">
+            <h5 class="title text-transition">We are Global</h5>
+            <p class="subtitle text-transition">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer py-5">
+        <div class="custom-container">
+            <div class="row gy-4">
+                <!-- LEFT: Logo + paragraph -->
+                <div class="col-12 col-md-4">
+                    <img src="/Assets/logo.png" alt="AKMG Logo" class="footer-logo mb-3" />
+
+                    <p class="footer-desc mb-0">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been.
+                    </p>
+                </div>
+
+                <!-- RIGHT CONTENT -->
+                <div class="col-12 col-md-8">
+                    <div class="footer-right d-flex justify-content-between flex-wrap">
+                        <!-- Quick Links 1 -->
+                        <div class="footer-block">
+                            <h6>Quick Links</h6>
+                            <ul class="footer-list">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Network</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Quick Links 2 -->
+                        <div class="footer-block">
+                            <h6>Quick Links</h6>
+                            <ul class="footer-list">
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="/Pages/media.html">Media</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Secretariat -->
+                        <div class="footer-block">
+                            <h6>Secretariat</h6>
+                            <p class="footer-text mb-0">
+                                Sharjah Healthcare City<br />
+                                P O Box 40466<br />
+                                Sharjah, UAE
+                            </p>
+                        </div>
+
+                        <!-- Contact -->
+                        <div class="footer-block">
+                            <h6>Contact Us</h6>
+                            <p class="footer-text mb-1">+971 8 519 5566</p>
+                            <p class="footer-text mb-0">info@akmgglobal.org</p>
+                        </div>
+
+                        <!-- SOCIAL BLOCK (FULL WIDTH on mobile) -->
+                        <div class="footer-block social-block">
+                            <h6>Connect Social</h6>
+                            <div class="social-icons mt-2">
+                                <!-- <a href="#"><i class="bi bi-facebook"></i></a> -->
+                                <a
+                                    href="https://api.whatsapp.com/send?phone=+971585195566&text=Hello,%20I%20am%20interested%20to%20join%20AKMG%20GLOBAL"><i
+                                        class="bi bi-whatsapp"></i></a>
+                                <a href="https://www.youtube.com/@AKMGGlobal"><i class="bi bi-youtube"></i></a>
+                                <a href="https://www.linkedin.com/company/akmg-global/about/"><i
+                                        class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-line" />
+
+            <!-- BOTTOM COPYRIGHT -->
+            <div class="footer-bottom d-flex justify-content-between flex-wrap text-center text-md-start">
+                <div>© Copyright Therapeo Healthcare Consultancy FZ LLC</div>
+                <div class="d-flex gap-4 flex-wrap">
+                    <a href="#">All Rights Reserved</a>
+                    <a href="#">Terms and conditions</a>
+                    <a href="#">Cookies Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--  Fix Mobile Dropdown Toggle -->
+    <script>
+        document
+            .querySelectorAll(".mobile-link[data-bs-toggle='collapse']")
+            .forEach((el) => {
+                el.addEventListener("click", function (e) {
+                    const target = document.querySelector(
+                        this.getAttribute("data-bs-target")
+                    );
+                    const instance = bootstrap.Collapse.getOrCreateInstance(target);
+                    instance.toggle();
+                });
+            });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const elements = document.querySelectorAll(".text-transition");
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("show");
+                            observer.unobserve(entry.target); // animate once
+                        }
+                    });
+                },
+                { threshold: 0.2 }
+            );
+
+            elements.forEach((el) => observer.observe(el));
+        });
+    </script>
+
+    <script>
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("loader");
+            const content = document.getElementById("content");
+
+            // Fade out loader after the page is fully loaded
+            loader.classList.add("fade-out");
+
+            // Show main content after fade animation
+            setTimeout(() => {
+                loader.style.display = "none";
+                content.style.display = "block";
+            }, 800); // match the CSS transition time
+        });
+    </script>
+
+
+
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+
+</html>
