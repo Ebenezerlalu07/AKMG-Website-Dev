@@ -14,11 +14,11 @@ body {
   background-color: white;
 }
 
-.semi-bold{
+.semi-bold {
   font-weight: 600;
 }
 
-.white{
+.white {
   color: white;
 }
 
@@ -27,44 +27,57 @@ body {
    HERO BANNER
 =========================== */
 .akmg-hero {
-    position: relative;
-    width: 100%;
-    height: 55vh;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 55vh;
+  overflow: hidden;
+}
+
+.akmg-hero1 {
+  position: relative;
+  width: 100%;
+  height: 65vh;
+  overflow: hidden;
+}
+
+.akmg-hero1 .hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .akmg-hero .hero-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* CENTER TITLE IN MIDDLE */
 .hero-text-center {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
 }
 
 .hero-text-center h1 {
-    color: #fff;
-    font-size: 3rem;
-    font-weight: 700;
-    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 }
 
 /* MOBILE HERO */
 @media (max-width: 768px) {
-    .akmg-hero {
-        height: 35vh;
-    }
+  .akmg-hero {
+    height: 35vh;
+  }
 
-    .hero-text-center h1 {
-        font-size: 1.9rem;
-    }
+  .hero-text-center h1 {
+    font-size: 1.9rem;
+  }
 }
 
 
@@ -367,7 +380,7 @@ p {
 .custom-container {
   width: 80%;
   margin: auto;
-  
+
 }
 
 /* Mobile screens */
