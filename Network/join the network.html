@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/Assets/Logo Only.jpg" />
+    <title>AKMG Global</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/contact.css">
+    <!-- Loader -->
+
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loader">
+        <img src="/Assets/Logo Only.jpg" alt="Loading..." class="loader-logo" />
+    </div>
+
+    <!-- Your Website Content -->
+    <div id="content" style="display: none">
+        <!-- Your entire website HTML here -->
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white py-3 shadow-sm fixed-top">
+        <div class="custom-container d-flex align-items-center justify-content-between">
+            <a class="navbar-brand d-flex align-items-center m-0" href="/index.html">
+                <img src="/Assets/logo.png" height="45" />
+            </a>
+
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu">
+                <i class="bi bi-list" style="font-size: 32px"></i>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav nav-text align-items-center">
+                    <li><a class="nav-link " href="/index.html">Home</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  desktop-dropdown pe-2" data-bs-toggle="dropdown">
+                            About us <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/about/objectives.html">Objectives</a></li>
+                            <li><a class="dropdown-item" href="/about/officebears.html">Office Bearers</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active desktop-dropdown pe-2" data-bs-toggle="dropdown">
+                            Network <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/Network/join the network.html">Join the Network</a></li>
+                            <li><a class="dropdown-item" href="/Network/directory.html">Directory</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="nav-link " href="/Pages/events.html">Events</a></li>
+                    <li><a class="nav-link " href="/Pages/gallery.html">Gallery</a></li>
+                    <li><a class="nav-link " href="/Pages/media.html">Media</a></li>
+                    <li><a class="nav-link " href="/Pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <a class="login-btn d-none d-lg-flex align-items-center ms-3 btn btn-danger custom-btn" href="#">
+                Login
+                <div class="icon-round">
+                    <i data-lucide="arrow-up-right" class="lucide-icon"></i>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="offcanvas offcanvas-top h-100 mobile-offcanvas" id="mobileMenu" style="top: 70px">
+        <div class="offcanvas-body">
+            <a class="mobile-link" href="/index.html">Home <i class="bi bi-arrow-right"></i></a>
+
+            <!-- Dropdown 1 -->
+            <a class="mobile-link collapsed" data-bs-toggle="collapse" data-bs-target="#aboutDrop">
+                About <i class="bi bi-chevron-down"></i>
+            </a>
+            <div class="collapse ms-2" id="aboutDrop">
+                <a class="mobile-sublink" href="/about/objectives.html">Objectives</a>
+                <a class="mobile-sublink" href="/about/officebears.html">Office Bearers</a>
+            </div>
+
+            <!-- Dropdown 2 -->
+            <a class="mobile-link collapsed" data-bs-toggle="collapse" data-bs-target="#networkDrop">
+                Network <i class="bi bi-chevron-down"></i>
+            </a>
+            <div class="collapse ms-2" id="networkDrop">
+                <a class="mobile-sublink" href="/Network/join the network.html">Join the Network</a>
+                <a class="mobile-sublink" href="/Network/directory.html">Directory</a>
+            </div>
+
+            <a class="mobile-link" href="/Pages/events.html">Events <i class="bi bi-arrow-right"></i></a>
+            <a class="mobile-link" href="/Pages/gallery.html">Gallery <i class="bi bi-arrow-right"></i></a>
+            <a class="mobile-link" href="/Pages/media.html">Media <i class="bi bi-arrow-right"></i></a>
+            <a class="mobile-link" href="/Pages/contact.html">Contact <i class="bi bi-arrow-right"></i></a>
+            <a class="mobile-link" href="#">Login <i class="bi bi-arrow-right"></i></a>
+        </div>
+    </div>
+
+
+
+
+
+
+    <section class="akmg-hero">
+        <img src="/Assets/join the network banner.jpg" class="hero-img" alt="AKMG Banner">
+        <div class="hero-text-center">
+            <h1>Join The AKMG Global Network</h1>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="py-4 custom-container">
+        <h2 class="text-center about-title">
+            Why Join <span class="fw-bold"> AKMG Global</span>
+        </h2>
+        <p class="about-title">
+
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged.<br><br>
+
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+            more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+            Ipsum.
+
+        </p>
+    </section>
+
+
+    <!-- WHY JOIN AKMG -->
+    <section class="" style="
+    background:url('/Assets/join\ network\ bg.jpg') center/cover no-repeat;
+    padding:100px 0;">
+
+        <!-- Main Title -->
+        <div class="text-center mb-5 px-3">
+            <h2 class="fw-bold" style="
+            font-size:clamp(28px, 5vw, 48px);
+            line-height:1.2;
+        ">
+                Joining the Association of Medical<br>
+                <span class="d-block d-md-inline">and Dental Doctors of Kerala</span>
+            </h2>
+        </div>
+
+
+        <div class="custom-container">
+
+            <!-- White Rounded Wrapper -->
+            <div style="
+            background:#ffffff;
+            border-radius:30px;
+            padding:60px 50px;
+        ">
+
+                <!-- Title -->
+                <div class="text-center mb-5">
+                    <h2 class="about-title mb-2">Why Join <span class="fw-bold"> AKMG Global</span></h2>
+                    <p class="text-muted mx-auto" style="max-width:600px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc odio in et, lectus sit lorem id integer.
+                    </p>
+                </div>
+
+                <script src="https://unpkg.com/lucide@latest"></script>
+                <script>
+                    lucide.createIcons();
+                </script>
+
+
+                <!-- CARDS GRID -->
+                <div class="row g-4">
+
+                    <!-- Opportunities -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="h-100 p-4 rounded-4 bg-light position-relative">
+                            <h5 class="fw-semibold mb-3">
+                                Opportunities for networking
+                            </h5>
+                            <p class="text-muted small">
+                                The AKMG Global has a global network of members that offers a forum
+                                for Kerala-born medical and dental professionals to connect, work
+                                together, and exchange knowledge and expertise.
+                            </p>
+
+                            <span class="position-absolute bottom-0 end-0 m-3
+                bg-white rounded-circle d-flex align-items-center justify-content-center"
+                                style="width:36px;height:36px;">
+                                <i data-lucide="arrow-up-right" style="width:18px;height:18px;"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Cultural Exchange -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="h-100 p-4 rounded-4 text-white position-relative"
+                            style="background:linear-gradient(135deg,#1D4CA1,#9F3979,#F15D2A);">
+                            <h5 class="fw-semibold mb-3">
+                                Cultural exchange
+                            </h5>
+                            <p class="small">
+                                The AKMG Global plans social and cultural events to connect its members
+                                with their ancestry and to promote Kerala's rich heritage and traditions.
+                            </p>
+
+                            <span class="position-absolute bottom-0 end-0 m-3
+                bg-white text-dark rounded-circle d-flex align-items-center justify-content-center"
+                                style="width:36px;height:36px;">
+                                <i data-lucide="arrow-up-right" style="width:18px;height:18px;"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Advocacy -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="h-100 p-4 rounded-4 bg-light position-relative">
+                            <h5 class="fw-semibold mb-3">
+                                Advocacy
+                            </h5>
+                            <p class="text-muted small">
+                                AKMG Global fights for the interests of the healthcare industry as well
+                                as the rights and welfare of medical and dental professionals.
+                            </p>
+
+                            <span class="position-absolute bottom-0 end-0 m-3
+                bg-white rounded-circle d-flex align-items-center justify-content-center"
+                                style="width:36px;height:36px;">
+                                <i data-lucide="arrow-up-right" style="width:18px;height:18px;"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Professional Advancement (Wide) -->
+                    <div class="col-lg-6">
+                        <div class="h-100 p-4 rounded-4 text-white position-relative"
+                            style="background:linear-gradient(135deg,#1D4CA1,#9F3979,#F15D2A);">
+                            <h5 class="fw-semibold mb-3">
+                                Professional advancement
+                            </h5>
+                            <p class="small">
+                                AKMG Global provides initiatives and programs to support the growth and
+                                development of members' careers. The group offers opportunities for CME
+                                credits and staying current with medical advancements.
+                            </p>
+
+                            <span class="position-absolute bottom-0 end-0 m-3
+                bg-white text-dark rounded-circle d-flex align-items-center justify-content-center"
+                                style="width:36px;height:36px;">
+                                <i data-lucide="arrow-up-right" style="width:18px;height:18px;"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Philanthropy -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="h-100 p-4 rounded-4 bg-light position-relative">
+                            <h5 class="fw-semibold mb-3">
+                                Philanthropy connect
+                            </h5>
+                            <p class="text-muted small">
+                                Will support welfare projects that aim to enhance the health and welfare
+                                of communities in Kerala and elsewhere.
+                            </p>
+
+                            <span class="position-absolute bottom-0 end-0 m-3
+                bg-white rounded-circle d-flex align-items-center justify-content-center"
+                                style="width:36px;height:36px;">
+                                <i data-lucide="arrow-up-right" style="width:18px;height:18px;"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Social Connect -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="h-100 p-4 rounded-4 text-white position-relative"
+                            style="background:linear-gradient(135deg,#1D4CA1,#9F3979,#F15D2A);">
+                            <h5 class="fw-semibold mb-3">
+                                Social Connect
+                            </h5>
+                            <p class="small">
+                                AKMG Global supports charitable endeavors enabling like-minded doctors
+                                to join together.
+                            </p>
+
+                            <span class="position-absolute bottom-0 end-0 m-3
+            bg-white text-dark rounded-circle d-flex align-items-center justify-content-center"
+                                style="width:36px;height:36px;">
+                                <i data-lucide="arrow-up-right" style="width:18px;height:18px;"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div><br>
+            <h5 class="text-muted text-center">
+                Joining will enable you to support these worthy causes.
+            </h5>
+        </div>
+    </section>
+
+
+
+    <!-- HOW TO JOIN AKMG -->
+    <section class="py-5 bg-white">
+        <div class="custom-container">
+
+            <div class="row align-items-center g-5">
+
+                <!-- LEFT : STEPS -->
+                <div class="col-lg-6">
+
+                    <h2 class="about-title mb-5 animate fade-up">
+                        How to Join <span class="fw-bold"> AKMG Global </span>
+                    </h2>
+
+                    <!-- Step 1 -->
+                    <div class="d-flex gap-4 mb-4 position-relative animate fade-left delay-1">
+                        <div class="step-icon">
+                            ✓
+                        </div>
+                        <div>
+                            <h5 class="fw-semibold mb-1">Visit website</h5>
+                            <p class="text-muted small mb-0">
+                                www.akmgglobal.org &gt; Go to the "Network" &gt; click "Join the Network".
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="d-flex gap-4 mb-4 position-relative animate fade-left delay-2">
+                        <div class="step-icon">
+                            ✓
+                        </div>
+                        <div>
+                            <h5 class="fw-semibold mb-1">Tell us who you are</h5>
+                            <p class="text-muted small mb-0">
+                                Fill in your professional and personal details accurately.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="d-flex gap-4 mb-4 position-relative animate fade-left delay-3">
+                        <div class="step-icon">
+                            ✓
+                        </div>
+                        <div>
+                            <h5 class="fw-semibold mb-1">Profile Updation</h5>
+                            <p class="text-muted small mb-0">
+                                We will email you requesting documents required to complete your profile.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="d-flex gap-4 mb-4 position-relative animate fade-left delay-4">
+                        <div class="step-icon">
+                            ✓
+                        </div>
+                        <div>
+                            <h5 class="fw-semibold mb-1">Verification</h5>
+                            <p class="text-muted small mb-0">
+                                Once all documents are received, they will be processed by the registration team.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="d-flex gap-4 animate fade-left delay-5">
+                        <div class="step-icon">
+                            ✓
+                        </div>
+                        <div>
+                            <h5 class="fw-semibold mb-1">Final Onboarding</h5>
+                            <p class="text-muted small mb-0">
+                                After verification, you will be assigned as "Global Associate" and receive confirmation
+                                along with your Certificate of Association.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT : IMAGE -->
+                <div class="col-lg-6 animate fade-right">
+                    <img src="/Assets/wh join steps.jpg" alt="AKMG Doctors" class="img-fluid rounded-4"
+                        style="object-fit:cover;">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps -->
+    <section class="py-2 bg-white">
+        <div class="custom-container">
+
+            <!-- Title -->
+            <h2 class="text-center about-title">
+                Be the Global Patron for
+                <span class="fw-bold d-block d-md-inline">
+                    AKMG Network for lifetime!
+                </span>
+            </h2>
+
+            <!-- Image -->
+            <div class="text-center">
+                <img src="/Assets/Roadmap.png" alt="AKMG Roadmap" class="img-fluid mx-auto d-block" style="
+                     max-width:100%;
+                     height:auto;
+                     object-fit:contain;
+                 ">
+            </div>
+
+        </div>
+    </section>
+
+    <style>
+        /* ------------------------------
+   STEP ICON
+------------------------------ */
+        .step-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: #39b54a;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 700;
+            flex-shrink: 0;
+            box-shadow: 0 0 0 8px rgba(57, 181, 74, 0.15);
+        }
+
+        /* ------------------------------
+   ANIMATION BASE (CRITICAL)
+------------------------------ */
+        .animate {
+            opacity: 0;
+            animation-duration: 0.8s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+        }
+
+        /* Animation directions */
+        .fade-up {
+            animation-name: fadeUp;
+        }
+
+        .fade-left {
+            animation-name: fadeLeft;
+        }
+
+        .fade-right {
+            animation-name: fadeRight;
+        }
+
+        /* ------------------------------
+   DELAYS
+------------------------------ */
+        .delay-1 {
+            animation-delay: 0.1s;
+        }
+
+        .delay-2 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-3 {
+            animation-delay: 0.3s;
+        }
+
+        .delay-4 {
+            animation-delay: 0.4s;
+        }
+
+        .delay-5 {
+            animation-delay: 0.5s;
+        }
+
+        /* ------------------------------
+   KEYFRAMES
+------------------------------ */
+        @keyframes fadeUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeLeft {
+            from {
+                transform: translateX(-30px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeRight {
+            from {
+                transform: translateX(30px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+
+
+    <!-- GLOBAL PATRON -->
+    <section class="py-2 bg-white">
+        <div class="custom-container">
+
+            <!-- Banner -->
+            <div class="position-relative overflow-hidden rounded-4" style="
+                background:url('/Assets/banner 1.jpg') center/cover no-repeat;
+                min-height:320px;
+            ">
+
+                <!-- Optional overlay -->
+                <div style="position:absolute; inset:0;"></div>
+
+                <!-- Content -->
+                <div class="row h-100 position-relative px-4 px-md-5 py-5">
+
+                    <!-- LEFT CONTENT -->
+                    <div class="col-lg-8 text-white">
+                        <h2 class="fw-bold mb-3" style="font-size:clamp(28px, 5vw, 48px); line-height:1.2;">
+                            Global Patron
+                        </h2>
+
+                        <p style="max-width:560px; font-size:clamp(14px, 2.5vw, 18px);">
+                            This is the most premium level of the AKMG Network and grants
+                            lifetime access to all AKMG Global opportunities and benefits.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- ✅ CTA FIXED TO BOTTOM RIGHT -->
+                <div class="position-absolute bottom-0 end-0 p-4 p-md-5">
+                    <a href="#" class="btn btn-danger custom-btn d-inline-flex align-items-center gap-2"
+                        data-bs-toggle="modal" data-bs-target="#joinNetworkModal" id="join-btn">
+                        Join Network
+                        <div class="icon-round">
+                            <i data-lucide="arrow-up-right" class="lucide-icon"></i>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="py-5 bg-white">
+        <div class="container">
+
+            <!-- Title -->
+            <h2 class="fw-semibold mb-4">
+                Frequently Asked Questions
+            </h2>
+
+            <div class="accordion faq-accordion" id="faqAccordion">
+
+                <!-- FAQ 1 -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq1">
+                            What is AKMG Global?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show">
+                        <div class="accordion-body pt-0">
+                            The Association of Medical and Dental Doctors of Kerala (AKMG Global) is a global networking
+                            platform that unites medical and dental professionals of Kerala origin from across the
+                            world.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq2">
+                            Who is considered a Kerala origin?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse">
+                        <div class="accordion-body pt-0">
+                            A person with ancestral or cultural roots in the Indian state of Kerala is considered
+                            of Kerala origin. Keralites reside globally for professional and personal reasons.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq3">
+                            What are the benefits of becoming a member of AKMG Global?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse">
+                        <div class="accordion-body pt-0">
+                            Members gain access to global networking opportunities, educational resources,
+                            professional collaborations, events, and the AKMG Global online community.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq4">
+                            Who can become a member of AKMG Global?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse">
+                        <div class="accordion-body pt-0">
+                            Membership is open to actively practicing medical and dental professionals
+                            of Kerala origin.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq5">
+                            Is there any membership fee?
+                        </button>
+                    </h2>
+                    <div id="faq5" class="accordion-collapse collapse">
+                        <div class="accordion-body pt-0">
+                            AKMG Global operates as a pan-global virtual network and does not charge
+                            a basic membership fee.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq6">
+                            Where is AKMG Global located?
+                        </button>
+                    </h2>
+                    <div id="faq6" class="accordion-collapse collapse">
+                        <div class="accordion-body pt-0">
+                            AKMG Global is located at Sharjah Healthcare City, P.O. Box 40466,
+                            Sharjah, United Arab Emirates.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq7">
+                            What can I do for the organization?
+                        </button>
+                    </h2>
+                    <div id="faq7" class="accordion-collapse collapse">
+                        <div class="accordion-body pt-0">
+                            You can contribute by offering your professional expertise, volunteering,
+                            participating in events, and helping connect members through the community.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 8 -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq8">
+                            How can I meet other members of the organization?
+                        </button>
+                    </h2>
+                    <div id="faq8" class="accordion-collapse collapse">
+                        <div class="accordion-body pt-0">
+                            After joining the network and completing profile verification by the
+                            internal committee, you will receive login credentials to access
+                            the member directory.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 9 -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq9">
+                            Can I contact my batchmates through the connect feature?
+                        </button>
+                    </h2>
+                    <div id="faq9" class="accordion-collapse collapse">
+                        <div class="accordion-body pt-0">
+                            Yes, the connect feature allows you to contact your batchmates.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 10 -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq10">
+                            Can I make a suggestion for a project or initiative?
+                        </button>
+                    </h2>
+                    <div id="faq10" class="accordion-collapse collapse">
+                        <div class="accordion-body pt-0">
+                            Yes, project or initiative suggestions can be submitted and will be
+                            reviewed by the board members for approval.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 11 -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq11">
+                            How can I stay updated on news and activities?
+                        </button>
+                    </h2>
+                    <div id="faq11" class="accordion-collapse collapse">
+                        <div class="accordion-body pt-0">
+                            Visit the AKMG Global website regularly, where updates and events
+                            are published under the Events section.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 12 -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq12">
+                            I am not practicing currently. Can I join?
+                        </button>
+                    </h2>
+                    <div id="faq12" class="accordion-collapse collapse">
+                        <div class="accordion-body pt-0">
+                            No, only actively practicing medical and dental professionals
+                            are eligible for membership.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 13 -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq13">
+                            I reside in India. Can I join AKMG Global?
+                        </button>
+                    </h2>
+                    <div id="faq13" class="accordion-collapse collapse">
+                        <div class="accordion-body pt-0">
+                            No, AKMG Global focuses on healthcare professionals based in the US,
+                            Canada, Australia, the Middle East, Europe, and Africa.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 14 -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq14">
+                            I am changing jobs or countries. What should I do?
+                        </button>
+                    </h2>
+                    <div id="faq14" class="accordion-collapse collapse">
+                        <div class="accordion-body pt-0">
+                            Job or country changes do not affect your membership.
+                            Update your profile and email the request to
+                            <a href="mailto:info@akmgglobal.org">info@akmgglobal.org</a>.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 15 -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq15">
+                            What is the difference between Global Associate and Global Patron?
+                        </button>
+                    </h2>
+                    <div id="faq15" class="accordion-collapse collapse">
+                        <div class="accordion-body pt-0">
+                            Global Patron offers lifetime access to all AKMG Global benefits.
+                            Global Associate membership is renewable annually.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 16 -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq16">
+                            I am a Global Patron. What are my responsibilities?
+                        </button>
+                    </h2>
+                    <div id="faq16" class="accordion-collapse collapse">
+                        <div class="accordion-body pt-0">
+                            Responsibilities are assigned by the board members and may include
+                            core roles supporting AKMG Global’s main functional activities.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 17 -->
+                <div class="accordion-item border-0">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq17">
+                            I am an alternative medicine practitioner (non-allopath). Can I join? the organization?
+                        </button>
+                    </h2>
+                    <div id="faq17" class="accordion-collapse collapse">
+                        <div class="accordion-body pt-0">
+                            No, alternative or non-allopathic medicine practitioners are not
+                            eligible for membership in AKMG Global.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Global with img -->
+    <section class="global-video-section image-bg">
+        <div class="video-overlay"></div>
+
+        <div class="video-content text-center">
+            <h5 class="title text-transition">We are Global</h5>
+            <p class="subtitle text-transition">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer py-5">
+        <div class="custom-container">
+            <div class="row gy-4">
+                <!-- LEFT: Logo + paragraph -->
+                <div class="col-12 col-md-4">
+                    <img src="/Assets/logo.png" alt="AKMG Logo" class="footer-logo mb-3" />
+
+                    <p class="footer-desc mb-0">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been.
+                    </p>
+                </div>
+
+                <!-- RIGHT CONTENT -->
+                <div class="col-12 col-md-8">
+                    <div class="footer-right d-flex justify-content-between flex-wrap">
+                        <!-- Quick Links 1 -->
+                        <div class="footer-block">
+                            <h6>Quick Links</h6>
+                            <ul class="footer-list">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Network</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Quick Links 2 -->
+                        <div class="footer-block">
+                            <h6>Quick Links</h6>
+                            <ul class="footer-list">
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Media</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Secretariat -->
+                        <div class="footer-block">
+                            <h6>Secretariat</h6>
+                            <p class="footer-text mb-0">
+                                Sharjah Healthcare City<br />
+                                P O Box 40466<br />
+                                Sharjah, UAE
+                            </p>
+                        </div>
+
+                        <!-- Contact -->
+                        <div class="footer-block">
+                            <h6>Contact Us</h6>
+                            <p class="footer-text mb-1">+971 8 519 5566</p>
+                            <p class="footer-text mb-0">info@akmgglobal.org</p>
+                        </div>
+
+                        <!-- SOCIAL BLOCK (FULL WIDTH on mobile) -->
+                        <div class="footer-block social-block">
+                            <h6>Connect Social</h6>
+                            <div class="social-icons mt-2">
+                                <!-- <a href="#"><i class="bi bi-facebook"></i></a> -->
+                                <a
+                                    href="https://api.whatsapp.com/send?phone=+971585195566&text=Hello,%20I%20am%20interested%20to%20join%20AKMG%20GLOBAL"><i
+                                        class="bi bi-whatsapp"></i></a>
+                                <a href="https://www.youtube.com/@AKMGGlobal"><i class="bi bi-youtube"></i></a>
+                                <a href="https://www.linkedin.com/company/akmg-global/about/"><i
+                                        class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-line" />
+
+            <!-- BOTTOM COPYRIGHT -->
+            <div class="footer-bottom d-flex justify-content-between flex-wrap text-center text-md-start">
+                <div>© Copyright Therapeo Healthcare Consultancy FZ LLC</div>
+                <div class="d-flex gap-4 flex-wrap">
+                    <a href="#">All Rights Reserved</a>
+                    <a href="/Pages/terms.html">Terms and conditions</a>
+                    <a href="/Pages/policy.html">Cookies Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--  Fix Mobile Dropdown Toggle -->
+    <script>
+        document
+            .querySelectorAll(".mobile-link[data-bs-toggle='collapse']")
+            .forEach((el) => {
+                el.addEventListener("click", function (e) {
+                    const target = document.querySelector(
+                        this.getAttribute("data-bs-target")
+                    );
+                    const instance = bootstrap.Collapse.getOrCreateInstance(target);
+                    instance.toggle();
+                });
+            });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const elements = document.querySelectorAll(".text-transition");
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("show");
+                            observer.unobserve(entry.target); // animate once
+                        }
+                    });
+                },
+                { threshold: 0.2 }
+            );
+
+            elements.forEach((el) => observer.observe(el));
+        });
+    </script>
+
+    <script>
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("loader");
+            const content = document.getElementById("content");
+
+            // Fade out loader after the page is fully loaded
+            loader.classList.add("fade-out");
+
+            // Show main content after fade animation
+            setTimeout(() => {
+                loader.style.display = "none";
+                content.style.display = "block";
+            }, 800); // match the CSS transition time
+        });
+    </script>
+
+
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+
+</html>

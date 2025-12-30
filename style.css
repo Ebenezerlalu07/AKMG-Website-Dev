@@ -1620,3 +1620,62 @@ p {
     width: 48%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+/* Remove all accordion background colors */
+.accordion-button,
+.accordion-button:not(.collapsed),
+.accordion-item {
+    background-color: transparent !important;
+}
+
+/* Remove Bootstrap default arrow */
+.accordion-button::after {
+    display: none !important;
+}
+
+/* Custom + / × icon */
+.accordion-button {
+    position: relative;
+    padding-right: 50px;
+    box-shadow: none !important;
+    font-size: 18px;
+}
+
+.accordion-button::before {
+    content: "+";
+    position: absolute;
+    right: 0;
+    font-size: 26px;
+    font-weight: 300;
+    color: #274193;
+    transition: 0.2s ease;
+}
+
+.accordion-button:not(.collapsed)::before {
+    content: "×";
+    font-size: 28px;
+}
+
+/* Body text */
+.accordion-body {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Mobile font size */
+@media (max-width: 768px) {
+    .accordion-button {
+        font-size: 16px;
+    }
+}
+
