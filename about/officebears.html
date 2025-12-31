@@ -118,7 +118,7 @@
 
     <!-- BANNER SLIDER -->
     <section>
-        <div class="container-fluid p-0">
+        <div class="container-fluid p-0 animate fade-up">
 
             <div id="akmgBanner" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
 
@@ -149,6 +149,8 @@
                     </div>
 
                 </div>
+
+
 
                 <!-- CONTROLS -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#akmgBanner" data-bs-slide="prev">
@@ -274,6 +276,20 @@
     </style>
 
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const carouselElement = document.querySelector("#akmgBanner");
+
+            if (carouselElement) {
+                new bootstrap.Carousel(carouselElement, {
+                    interval: 4000,   // Auto slide every 4 seconds
+                    ride: "carousel",
+                    pause: false,    // Keeps sliding even on hover
+                    wrap: true       // Infinite loop
+                });
+            }
+        });
+    </script>
 
 
 
