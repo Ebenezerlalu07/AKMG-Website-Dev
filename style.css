@@ -1679,9 +1679,9 @@ p {
   }
 }
 
-/* ------------------------------
+/* ===============================
    STEP ICON
------------------------------- */
+=============================== */
 .step-icon {
   width: 42px;
   height: 42px;
@@ -1697,17 +1697,25 @@ p {
   box-shadow: 0 0 0 8px rgba(57, 181, 74, 0.15);
 }
 
-/* ------------------------------
-   ANIMATION BASE (CRITICAL)
------------------------------- */
+/* ===============================
+   IMAGE FIX
+=============================== */
+.join-img {
+  max-height: 420px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ===============================
+   ANIMATION BASE
+=============================== */
 .animate {
   opacity: 0;
   animation-duration: 0.8s;
-  animation-timing-function: ease;
   animation-fill-mode: forwards;
+  animation-timing-function: ease;
 }
 
-/* Animation directions */
 .fade-up {
   animation-name: fadeUp;
 }
@@ -1720,9 +1728,6 @@ p {
   animation-name: fadeRight;
 }
 
-/* ------------------------------
-   DELAYS
------------------------------- */
 .delay-1 {
   animation-delay: 0.1s;
 }
@@ -1743,9 +1748,9 @@ p {
   animation-delay: 0.5s;
 }
 
-/* ------------------------------
+/* ===============================
    KEYFRAMES
------------------------------- */
+=============================== */
 @keyframes fadeUp {
   from {
     transform: translateY(30px);
@@ -1779,5 +1784,163 @@ p {
   to {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+/* ===============================
+   MOBILE RESPONSIVE FIX
+=============================== */
+@media (max-width: 768px) {
+
+  .step-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+    box-shadow: 0 0 0 5px rgba(57, 181, 74, 0.15);
+  }
+
+  .step-icon+div h5 {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  .step-icon+div p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .animate {
+    animation-delay: 0s !important;
+    animation-duration: 0.6s;
+  }
+
+  .join-img {
+    max-height: 280px;
+  }
+}
+
+
+
+/* STEP ICON */
+.step-icon {
+  width: 42px;
+  height: 42px;
+  background: #2fb36f;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* Space between steps */
+.step-item {
+  margin-bottom: 28px;
+}
+
+/* Remove gap after last step */
+.step-item:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Vertical Line */
+.step-item::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 50px;
+  width: 2px;
+  height: calc(100% + 20px);
+  background: #d9f2e4;
+  z-index: 1;
+}
+
+.step-item:last-child::before {
+  display: none;
+}
+
+/* ANIMATIONS */
+.animate {
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.fade-up {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.fade-left {
+  animation: fadeLeft 0.8s ease forwards;
+}
+
+.fade-right {
+  animation: fadeRight 0.8s ease forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.delay-2 {
+  animation-delay: 0.4s;
+}
+
+.delay-3 {
+  animation-delay: 0.6s;
+}
+
+.delay-4 {
+  animation-delay: 0.8s;
+}
+
+.delay-5 {
+  animation-delay: 1s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* MOBILE ADJUSTMENTS */
+@media (max-width: 768px) {
+  .step-item::before {
+    left: 21px;
   }
 }
