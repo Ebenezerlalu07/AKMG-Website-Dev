@@ -1,331 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Admin — Join the Network</title>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              brand: "#274193",
-              accent: "#f15d2a",
-              pagebg: "#f4f5f7",
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin — Join the Network</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: "#274193",
+                        accent: "#f15d2a",
+                        pagebg: "#f4f5f7",
+                    },
+                },
             },
-          },
-        },
-      };
-        </script>
-    </head>
-    <body class="bg-pagebg text-gray-800 font-[Poppins] min-h-screen">
-        <!-- Page Loader -->
-        <div id="pageLoader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-white transition-opacity duration-300">
-            <div class="w-12 h-12 rounded-full border-4 border-brand border-t-transparent animate-spin"></div>
-        </div>
-        <div class="flex min-h-screen overflow-hidden">
-            <aside id="sidebar" class="fixed inset-y-0 left-0 z-40 w-64 bg-white
+        };
+    </script>
+</head>
+
+<body class="bg-pagebg text-gray-800 font-[Poppins] min-h-screen">
+    <!-- Page Loader -->
+    <div id="pageLoader"
+        class="fixed inset-0 z-[9999] flex items-center justify-center bg-white transition-opacity duration-300">
+        <div class="w-12 h-12 rounded-full border-4 border-brand border-t-transparent animate-spin"></div>
+    </div>
+    <div class="flex min-h-screen overflow-hidden">
+        <aside id="sidebar" class="fixed inset-y-0 left-0 z-40 w-64 bg-white
          flex flex-col
          -translate-x-full lg:translate-x-0
          transition-transform duration-300 ease-in-out
          lg:static lg:h-screen">
-                <div class="px-6 py-6">
-                    <img src="/assets/logo.png" class="w-44" alt="AKMD">
-                </div>
-                <nav class="flex-1 space-y-1 relative text-[14px]">
-                    <a href="myprofile.html" data-page="myprofile.html" class="nav-link group relative flex items-center gap-3
+            <div class="px-6 py-6">
+                <img src="/assets/logo.png" class="w-44" alt="AKMD">
+            </div>
+            <nav class="flex-1 space-y-1 relative text-[14px]">
+                <a href="myprofile.html" data-page="myprofile.html" class="nav-link group relative flex items-center gap-3
          px-6 py-3 ml-3 mr-4 rounded-xl
          text-gray-700 transition-all duration-300
          hover:bg-blue-50 hover:text-brand">
-                        <!-- ICON : User -->
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            class="w-4 h-4 shrink-0
+                    <!-- ICON : User -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4 shrink-0
            text-gray-500
            transition-colors duration-300
            group-hover:text-brand
-           group-[.active]:text-brand"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        >
-                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
-                            <circle cx="12" cy="7" r="4"/>
-                        </svg>
-                        <!-- ACTIVE BAR -->
-                        <span class="nav-bar absolute -left-4 top-1 bottom-1 w-2 h-10 bg-brand rounded-lg
+           group-[.active]:text-brand" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg>
+                    <!-- ACTIVE BAR -->
+                    <span class="nav-bar absolute -left-4 top-1 bottom-1 w-2 h-10 bg-brand rounded-lg
            scale-y-0 opacity-0 transition-all duration-300 origin-center
            group-[.active]:scale-y-100 group-[.active]:opacity-100"></span>
-                        <!-- TEXT -->
-                        <span class="whitespace-nowrap
+                    <!-- TEXT -->
+                    <span class="whitespace-nowrap
            transition-colors duration-300
            group-hover:text-brand
            group-[.active]:text-brand">
-                            My Profile
-                        </span>
-                    </a>
-                    <a href="editprofile.html" data-page="editprofile.html" class="nav-link group relative flex items-center gap-3
+                        My Profile
+                    </span>
+                </a>
+                <a href="editprofile.html" data-page="editprofile.html" class="nav-link group relative flex items-center gap-3
          px-6 py-3 ml-3 mr-4 rounded-xl
          text-gray-700 transition-all duration-300
          hover:bg-[rgba(39,65,147,0.1)] hover:text-brand">
-                        <!-- ICON : Pencil -->
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            class="w-4 h-4 shrink-0
+                    <!-- ICON : Pencil -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4 shrink-0
            text-gray-500
            transition-colors duration-300
            group-hover:text-brand
-           group-[.active]:text-brand"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        >
-                            <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/>
-                            <path d="m15 5 4 4"/>
-                        </svg>
-                        <!-- ACTIVE BAR -->
-                        <span class="nav-bar absolute -left-4 top-1 bottom-1 w-2 h-10 bg-brand rounded-lg
+           group-[.active]:text-brand" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                            d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" />
+                        <path d="m15 5 4 4" />
+                    </svg>
+                    <!-- ACTIVE BAR -->
+                    <span class="nav-bar absolute -left-4 top-1 bottom-1 w-2 h-10 bg-brand rounded-lg
            scale-y-0 opacity-0 transition-all duration-300 origin-center
            group-[.active]:scale-y-100 group-[.active]:opacity-100"></span>
-                        <!-- TEXT -->
-                        <span class="whitespace-nowrap
+                    <!-- TEXT -->
+                    <span class="whitespace-nowrap
            transition-colors duration-300
            group-hover:text-brand
            group-[.active]:text-brand">
-                            Edit Profile
-                        </span>
-                    </a>
-                </nav>
-                <div class="px-6 pb-6">
-                    <button class="w-full bg-accent text-white py-3 rounded-full font-medium">
-                        Log Out
-                    </button>
+                        Edit Profile
+                    </span>
+                </a>
+            </nav>
+            <div class="px-6 pb-6">
+                <button class="w-full bg-accent text-white py-3 rounded-full font-medium">
+                    Log Out
+                </button>
+            </div>
+        </aside>
+        <div id="overlay" class="fixed inset-0 bg-black/40 hidden lg:hidden z-30"></div>
+        <div class="flex-1 flex flex-col min-w-0 overflow-hidden">
+            <header class="h-16 bg-white flex items-center justify-between px-4 sm:px-6 shrink-0">
+                <div class="flex items-center gap-3 shrink-0">
+                    <button id="menuBtn" class="lg:hidden text-2xl">☰</button>
                 </div>
-            </aside>
-            <div id="overlay" class="fixed inset-0 bg-black/40 hidden lg:hidden z-30"></div>
-            <div class="flex-1 flex flex-col min-w-0 overflow-hidden">
-                <header class="h-16 bg-white flex items-center justify-between px-4 sm:px-6 shrink-0">
-                    <div class="flex items-center gap-3 shrink-0">
-                        <button id="menuBtn" class="lg:hidden text-2xl">☰</button>
-                    </div>
-                    <div class="flex items-center gap-6 shrink-0">
-                        <div class="relative">
-                            <div class="w-10 h-10 flex items-center justify-center
+                <div class="flex items-center gap-6 shrink-0">
+                    <div class="relative">
+                        <div class="w-10 h-10 flex items-center justify-center
            rounded-xl
            bg-[rgba(39,65,147,0.15)]
            border ">
-                                <img src="/Assets/bell.png" class="w-5 h-5 object-contain" alt="Notifications">
-                            </div>
-                            <span class="absolute -top-2 -right-2
+                            <img src="/Assets/bell.png" class="w-5 h-5 object-contain" alt="Notifications">
+                        </div>
+                        <span class="absolute -top-2 -right-2
            bg-brand text-white text-[11px]
            px-1.5 py-0.5 rounded-full font-medium">
-                                21
-                            </span>
-                        </div>
-                        <div class="h-8 w-px bg-gray-300"></div>
-                        <div class="flex items-center gap-3">
-                            <span class="text-sm text-gray-700 whitespace-nowrap">
-                                Hello,
-                                <strong class="font-semibold text-gray-900">Alex Jane</strong>
-                            </span>
-                            <img src="/assets/avatar2.png" class="w-9 h-9 rounded-full object-cover" alt="User avatar">
-                        </div>
+                            21
+                        </span>
                     </div>
-                </header>
-                <main class="flex-1 overflow-y-auto px-4 py-4 sm:p-8">
-                    <div class="flex items-center justify-between mb-6">
+                    <div class="h-8 w-px bg-gray-300"></div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-sm text-gray-700 whitespace-nowrap">
+                            Hello,
+                            <strong class="font-semibold text-gray-900">Alex Jane</strong>
+                        </span>
+                        <img src="/assets/avatar2.png" class="w-9 h-9 rounded-full object-cover" alt="User avatar">
+                    </div>
+                </div>
+            </header>
+            <main class="flex-1 overflow-y-auto px-4 py-4 sm:p-8">
+                <div class="flex items-center justify-between mb-6">
+                    <div>
+                        <h1 class="text-xl text-[#1E1E1E] font-semibold">Welcome Back Jhonathan</h1>
+                        <p class="text-sm text-[#A3A3A3]">Hi, Jhonathan. Welcome back to AKMG Global User Profile!</p>
+                    </div>
+                    <a href="editprofile.html" class="inline-flex items-center justify-center gap-2
+          bg-accent text-white
+          text-xs sm:text-sm
+          px-3 py-2 sm:px-6 sm:py-2
+          rounded-full font-medium shadow-md
+          hover:opacity-90 transition">
+
+                        <!-- Pencil Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" />
+                            <path d="m15 5 4 4" />
+                        </svg>
+
+                        <!-- Text (hidden on mobile) -->
+                        <span class="hidden sm:inline">Edit Profile</span>
+                    </a>
+
+                </div>
+                <div class="bg-white rounded-xl shadow p-6 sm:p-8 ">
+                    <!-- PROFILE HEADER -->
+                    <div class="flex items-center gap-4 mb-8">
+                        <img src="/assets/avatar2.png" class="w-14 h-14 rounded-full object-cover" alt="Profile">
                         <div>
-                            <h1 class="text-xl text-[#1E1E1E] font-semibold">Welcome Back Jhonathan</h1>
-                            <p class="text-sm text-[#A3A3A3]">Hi, Jhonathan. Welcome back  to AKMG Global User Profile!</p>
+                            <h2 class="font-semibold text-lg">Jhonathan jake</h2>
+                            <p class="text-sm text-[#A3A3A3]">jhonathan01@gmail.com</p>
                         </div>
-                        <a href="editprofile.html" class="inline-flex items-center gap-2
-         bg-accent text-white
-         text-xs sm:text-sm
-         px-4 py-2 sm:px-6 sm:py-2
-         rounded-full
-         font-medium
-         shadow-md
-         hover:opacity-90
-         transition
-         whitespace-nowrap">
-                            <!-- Pencil Icon -->
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="w-4 h-4"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/>
-                                <path d="m15 5 4 4"/>
-                            </svg>
-                            Edit Profile
-                        </a>
                     </div>
-                    <div class="bg-white rounded-xl shadow p-6 sm:p-8 ">
-                        <!-- PROFILE HEADER -->
-                        <div class="flex items-center gap-4 mb-8">
-                            <img src="/assets/avatar2.png" class="w-14 h-14 rounded-full object-cover" alt="Profile">
-                            <div>
-                                <h2 class="font-semibold text-lg">Jhonathan jake</h2>
-                                <p class="text-sm text-[#A3A3A3]">jhonathan01@gmail.com</p>
-                            </div>
+                    <!-- FORM GRID -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                        <div>
+                            <label class="text-sm text-[#000000]">Full Name</label>
+                            <input type="text" placeholder="Jhonathan jake"
+                                class="mt-1 w-full bg-[#F9F9F9] px-4 py-3 rounded-lg outline-none">
                         </div>
-                        <!-- FORM GRID -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
-                            <div>
-                                <label class="text-sm text-[#000000]">Full Name</label>
-                                <input type="text" placeholder="Jhonathan jake" class="mt-1 w-full bg-[#F9F9F9] px-4 py-3 rounded-lg outline-none">
-                            </div>
-                            <div>
-                                <label class="text-sm text-[#000000]">E Mail</label>
-                                <input type="email" placeholder="jhonathan01@gmail.com" class="mt-1 w-full bg-[#F9F9F9] px-4 py-3 rounded-lg outline-none">
-                            </div>
-                            <div>
-                                <label class="text-sm text-[#000000]">Designation</label>
-                                <select class="mt-1 w-full bg-gray-50 px-4 py-3 rounded-lg outline-none
-         text-gray-400 focus:text-gray-700" onchange="this.classList.remove('text-gray-400')">
-                                    <option
-                                        value=""
-                                        disabled
-                                        selected
-                                        hidden
-                                    >
-                                        Select your designation
-                                    </option>
-                                    <option>Dental Doctor, USA</option>
-                                    <option>MBBS</option>
-                                    <option>MD</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label class="text-sm text-[#000000]">Country</label>
-                                <select class="mt-1 w-full bg-gray-50 px-4 py-3 rounded-lg outline-none
-         text-gray-400 focus:text-gray-700" onchange="this.classList.remove('text-gray-400')">
-                                    <option
-                                        value=""
-                                        disabled
-                                        selected
-                                        hidden
-                                    >
-                                        Select your country
-                                    </option>
-                                    <option>United States of America</option>
-                                    <option>India</option>
-                                    <option>UAE</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label class="text-sm text-[#000000]">Phone Number</label>
-                                <input type="number" placeholder="+1 658422541" class="mt-1 w-full bg-[#F9F9F9] px-4 py-3 rounded-lg outline-none">
-                            </div>
-                            <div>
-                                <label class="text-sm text-[#000000]">Address</label>
-                                <input type="text" placeholder="Your Address" class="mt-1 w-full bg-[#F9F9F9] px-4 py-3 rounded-lg outline-none">
-                            </div>
+                        <div>
+                            <label class="text-sm text-[#000000]">E Mail</label>
+                            <input type="email" placeholder="jhonathan01@gmail.com"
+                                class="mt-1 w-full bg-[#F9F9F9] px-4 py-3 rounded-lg outline-none">
                         </div>
-                        <!-- ATTACH CLIENT IMAGE -->
-                        <div class="flex items-center align-items mt-4 ">
-                            <label for="clientImage" class="flex items-center gap-2 text-sm text-gray-700 cursor-pointer
+                        <div>
+                            <label class="text-sm text-[#000000]">Designation</label>
+                            <select class="mt-1 w-full bg-gray-50 px-4 py-3 rounded-lg outline-none
+         text-gray-400 focus:text-gray-700" onchange="this.classList.remove('text-gray-400')">
+                                <option value="" disabled selected hidden>
+                                    Select your designation
+                                </option>
+                                <option>Dental Doctor, USA</option>
+                                <option>MBBS</option>
+                                <option>MD</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="text-sm text-[#000000]">Country</label>
+                            <select class="mt-1 w-full bg-gray-50 px-4 py-3 rounded-lg outline-none
+         text-gray-400 focus:text-gray-700" onchange="this.classList.remove('text-gray-400')">
+                                <option value="" disabled selected hidden>
+                                    Select your country
+                                </option>
+                                <option>United States of America</option>
+                                <option>India</option>
+                                <option>UAE</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="text-sm text-[#000000]">Phone Number</label>
+                            <input type="number" placeholder="+1 658422541"
+                                class="mt-1 w-full bg-[#F9F9F9] px-4 py-3 rounded-lg outline-none">
+                        </div>
+                        <div>
+                            <label class="text-sm text-[#000000]">Address</label>
+                            <input type="text" placeholder="Your Address"
+                                class="mt-1 w-full bg-[#F9F9F9] px-4 py-3 rounded-lg outline-none">
+                        </div>
+                    </div>
+                    <!-- ATTACH CLIENT IMAGE -->
+                    <div class="flex items-center align-items mt-4 ">
+                        <label for="clientImage" class="flex items-center gap-2 text-sm text-gray-700 cursor-pointer
            hover:text-brand transition">
-                                <!-- Paperclip Icon -->
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    class="w-5 h-4"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                >
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.44 11.05l-8.49 8.49a5.5 5.5 0 01-7.78-7.78l9.19-9.19a3.5 3.5 0 114.95 4.95l-9.2 9.2a1.5 1.5 0 01-2.12-2.12l8.49-8.49"/>
-                                </svg>
-                                <span>Attach client image</span>
-                            </label>
-                            <!-- Hidden file input -->
-                            <input
-                                type="file"
-                                id="clientImage"
-                                accept="image/*"
-                                class="hidden"
-                                onchange="showFileName(this)"
-                            >
-                            <!-- Optional filename preview -->
-                            <p id="fileName" class=" ml-3  lg:ml-4 text-xs text-gray-500 hidden"></p>
-                        </div>
-                        <!-- ADD DIRECTORY -->
-                        <div class="mt-8">
-                            <h3 class="font-medium mb-1">Add Directory</h3>
-                            <p class="text-sm text-gray-500 ">
-                                Add your profile details in Directory Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-      the industry’s standard dummy text ever since the
-                            </p>
-                            <button class="mt-2 bg-orange-50 text-[#F15D2A] px-6 py-2 rounded-full text-sm font-medium">
-                                + Add Directory
-                            </button>
-                        </div>
+                            <!-- Paperclip Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-4" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21.44 11.05l-8.49 8.49a5.5 5.5 0 01-7.78-7.78l9.19-9.19a3.5 3.5 0 114.95 4.95l-9.2 9.2a1.5 1.5 0 01-2.12-2.12l8.49-8.49" />
+                            </svg>
+                            <span>Attach client image</span>
+                        </label>
+                        <!-- Hidden file input -->
+                        <input type="file" id="clientImage" accept="image/*" class="hidden"
+                            onchange="showFileName(this)">
+                        <!-- Optional filename preview -->
+                        <p id="fileName" class=" ml-3  lg:ml-4 text-xs text-gray-500 hidden"></p>
                     </div>
-                </main>
-            </div>
+                    <!-- ADD DIRECTORY -->
+                    <div class="mt-8">
+                        <h3 class="font-medium mb-1">Add Directory</h3>
+                        <p class="text-sm text-gray-500 ">
+                            Add your profile details in Directory Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been
+                            the industry’s standard dummy text ever since the
+                        </p>
+                        <button class="mt-2 bg-orange-50 text-[#F15D2A] px-6 py-2 rounded-full text-sm font-medium">
+                            + Add Directory
+                        </button>
+                    </div>
+                </div>
+            </main>
         </div>
     </div>
+    </div>
     <script>
-  const menuBtn = document.getElementById("menuBtn");
-  const sidebar = document.getElementById("sidebar");
-  const overlay = document.getElementById("overlay");
+        const menuBtn = document.getElementById("menuBtn");
+        const sidebar = document.getElementById("sidebar");
+        const overlay = document.getElementById("overlay");
 
-  menuBtn.onclick = () => {
-    requestAnimationFrame(() => {
-      sidebar.classList.remove("-translate-x-full");
-      overlay.classList.remove("hidden");
-    });
-  };
+        menuBtn.onclick = () => {
+            requestAnimationFrame(() => {
+                sidebar.classList.remove("-translate-x-full");
+                overlay.classList.remove("hidden");
+            });
+        };
 
-  overlay.onclick = () => {
-    sidebar.classList.add("-translate-x-full");
-    overlay.classList.add("hidden");
-  };
+        overlay.onclick = () => {
+            sidebar.classList.add("-translate-x-full");
+            overlay.classList.add("hidden");
+        };
 
-  // active menu highlight
-  const current = window.location.pathname.split("/").pop();
-  document.querySelectorAll(".nav-link").forEach((link) => {
-    const bar = link.querySelector(".nav-bar");
-    if (link.dataset.page === current) {
-      link.classList.add("active", "bg-blue-50", "text-brand", "font-medium");
-      bar.classList.remove("scale-y-0", "opacity-0");
-      bar.classList.add("scale-y-100", "opacity-100");
-    }
-  });
+        // active menu highlight
+        const current = window.location.pathname.split("/").pop();
+        document.querySelectorAll(".nav-link").forEach((link) => {
+            const bar = link.querySelector(".nav-bar");
+            if (link.dataset.page === current) {
+                link.classList.add("active", "bg-blue-50", "text-brand", "font-medium");
+                bar.classList.remove("scale-y-0", "opacity-0");
+                bar.classList.add("scale-y-100", "opacity-100");
+            }
+        });
     </script>
     <script>
-  window.addEventListener("load", () => {
-    const loader = document.getElementById("pageLoader");
-    loader.classList.add("opacity-0");
+        window.addEventListener("load", () => {
+            const loader = document.getElementById("pageLoader");
+            loader.classList.add("opacity-0");
 
-    setTimeout(() => {
-      loader.classList.add("hidden");
-    }, 300);
-  });
+            setTimeout(() => {
+                loader.classList.add("hidden");
+            }, 300);
+        });
     </script>
     <script>
-  function showFileName(input) {
-    if (input.files.length > 0) {
-      const fileName = input.files[0].name;
-      const el = document.getElementById("fileName");
-      el.textContent = fileName;
-      el.classList.remove("hidden");
-    }
-  }
+        function showFileName(input) {
+            if (input.files.length > 0) {
+                const fileName = input.files[0].name;
+                const el = document.getElementById("fileName");
+                el.textContent = fileName;
+                el.classList.remove("hidden");
+            }
+        }
     </script>
 </body>
+
 </html>
