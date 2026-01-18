@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <!-- FONT -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- TAILWIND -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+            colors: {
+              brand: "#f15d2a",
+            },
+          },
+        },
+      };
+        </script>
+        <!-- TOGGLE STYLE -->
+        <style>
+      .remember {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        user-select: none;
+        color: #3F3F3F;
+      }
+
+      .remember input {
+        display: none;
+      }
+
+      .remember .toggle {
+        position: relative;
+        width: 40px;
+        height: 20px;
+        background: #d1d5db;
+        border-radius: 999px;
+        transition: background 0.3s ease;
+      }
+
+      .remember .toggle::after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 16px;
+        height: 16px;
+        background: #ffffff;
+        border-radius: 50%;
+        transition: left 0.3s ease;
+      }
+
+      .remember input:checked + .toggle {
+        background: #f15d2a;
+      }
+
+      .remember input:checked + .toggle::after {
+        left: 22px;
+      }
+        </style>
+    </head>
+    <body class="font-poppins min-h-screen bg-white
+    max-lg:bg-[url('/assets/login.png')] bg-cover bg-top relative">
+        <!-- PAGE LOADER -->
+        <div id="pageLoader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-white transition-opacity duration-300">
+            <div class="w-12 h-12 rounded-full border-4 border-brand border-t-transparent animate-spin"></div>
+        </div>
+        <!-- DARK OVERLAY (MOBILE) -->
+        <div class="absolute inset-0 bg-black/70 lg:hidden"></div>
+        <div class="relative flex min-h-screen">
+            <!-- LEFT -->
+            <div class="w-full lg:w-1/2 flex flex-col items-center justify-center
+         px-6 sm:px-10 lg:px-20 bg-white">
+                <!-- LOGO -->
+                <div class="absolute top-6 left-8 lg:left-16">
+                    <img src="/assets/logo.png" class="h-12" alt="Logo">
+                </div>
+                <!-- Form Wrapper -->
+                <div class="w-full max-w-[520px] mt-24 lg:mt-10 text-center">
+                    <h1 class="text-[30px] lg:text-[38px] font-semibold text-black">
+                        Submit your Details
+                    </h1>
+                    <p class="text-sm text-black/60 mt-3">
+                        Lorem Ipsum is simply dummy text of the printing and
+      typesetting industry.
+                    </p>
+                    <!-- FORM -->
+                    <form class="mt-1 flex flex-col gap-4 text-left">
+                        <!-- Input -->
+                        <input type="text" placeholder="Enter your Designation" class="w-full border-b border-black/40
+               py-2 text-sm
+               focus:outline-none focus:border-brand">
+                        <input type="text" placeholder="Enter your Country" class="w-full border-b border-black/40
+               py-2 text-sm
+               focus:outline-none focus:border-brand">
+                        <input type="text" placeholder="District of Origin" class="w-full border-b border-black/40
+               py-2 text-sm
+               focus:outline-none focus:border-brand">
+                        <input type="tel" placeholder="Phone Number" class="w-full border-b border-black/40
+               py-2 text-sm
+               focus:outline-none focus:border-brand">
+                        <input type="email" placeholder="Enter your email" class="w-full border-b border-black/40
+               py-2 text-sm
+               focus:outline-none focus:border-brand">
+                        <input type="text" placeholder="Enter your address" class="w-full border-b border-black/40
+               py-2 text-sm
+               focus:outline-none focus:border-brand">
+                        <input type="text" placeholder="Add your alumni" class="w-full border-b border-black/40
+               py-2 text-sm
+               focus:outline-none focus:border-brand">
+                        <!-- Toggle -->
+                        <div class="flex items-center justify-end gap-3 text-sm mt-1">
+                            <span>I am of Kerala origin</span>
+                            <label class="relative inline-flex items-center cursor-pointer">
+                                <input type="checkbox" class="sr-only peer">
+                                <div class="w-11 h-6 bg-gray-300 rounded-full
+                   peer peer-checked:bg-brand
+                   after:content-['']
+                   after:absolute after:top-[2px] after:left-[2px]
+                   after:w-5 after:h-5 after:bg-white after:rounded-full
+                   after:transition-all
+                   peer-checked:after:translate-x-5"></div>
+                            </label>
+                        </div>
+                        <!-- Submit Button -->
+                        <a href="/Dashboard/myprofile.html" class="block text-center w-full mt-1 py-3 rounded-full
+         bg-brand text-white text-[16px] font-medium
+         shadow-lg hover:opacity-90 transition">
+                            Submit
+                        </a>
+                    </form>
+                    <!-- Back Button -->
+                    <div class="flex justify-center mt-4">
+                        <a href="/Auth/Signup/sigup.html" class="w-10 h-10 rounded-full bg-brand text-white
+               flex items-center justify-center
+               hover:opacity-90 transition">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-chevron-left-icon lucide-chevron-left"
+                            >
+                                <path d="m15 18-6-6 6-6"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- RIGHT IMAGE -->
+            <div class="hidden lg:block w-1/2 h-screen overflow-hidden">
+                <img src="/assets/login.png" alt="Login visual" class="w-full h-full object-cover object-center">
+            </div>
+        </div>
+        <!-- LOADER SCRIPT -->
+        <script>
+      window.addEventListener("load", () => {
+        const loader = document.getElementById("pageLoader");
+        loader.classList.add("opacity-0");
+        setTimeout(() => loader.classList.add("hidden"), 300);
+      });
+        </script>
+    </body>
+</html>
